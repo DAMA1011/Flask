@@ -1,0 +1,16 @@
+<!-- practice start -->
+{{url_for('index')}}
+<hr>
+{{url_for('user',name='user1')}}
+<hr>
+{{url_for('user',name='abc',page=10)}}
+<hr>
+{{url_for('test_urlfor')}}
+<hr>
+<!-- _external: 把完整 url 顯示出來 -->
+{{url_for('test_urlfor',_external=True)}}
+<hr>
+{{url_for('test_urlfor', name='john', page=2, version=1)}}
+<hr>
+{{url_for('test_urlfor',_external=True, name='john', page=2, version=1)}}
+<!-- practice end -->
